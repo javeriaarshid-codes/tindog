@@ -1,37 +1,35 @@
-#title{
-  background-color: #ff4c68;
-}
-
 body{
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-.container-fluid{
-  padding: 3% 15%;
-}
-
-h1{
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  color: #8f8f8f;
+}
+
+/* Heading */
+
+.big-heading {
   font-weight: 900;
   line-height: 1.5;
   font-size: 3.5rem;
   color: white;
 }
 
-h2 {
-  font-family: 'Montserrat';
+.section-heading {
   font-weight:bold;
   font-size: 3rem;
   line-height: 1.5;
 }
 
-h3 {
-  font-weight: 600;
-  font-size: 1.5em;
-}
+/* Containers */
 
-p{
-  color: #8f8f8f;
+.container-fluid{
+  padding: 7% 15%;
 }
 
 /* Navigation Bar */
@@ -61,11 +59,24 @@ p{
   margin: 5% 3% 5% 0;
 }
 
+/* Title Section */
+
+#title{
+  background-color: #ff4c68;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
 /* Title Image */
 
 .title-img {
-  width: 60%;
+  width: 23%;
   transform : rotate(25deg);
+  position: absolute;
+  margin-left: 2%;
 }
 
 /* Features Section*/
@@ -74,8 +85,14 @@ p{
   padding: 5%;
 }
 
+.features-title {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
 #features {
-  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
 }
 
 .icon {
@@ -91,13 +108,8 @@ p{
 /* Testimonials Section */
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: #fff;
-}
-
-.carousel-item {
-    padding: 7% 15%;
 }
 
 .testimonial-image {
@@ -106,11 +118,16 @@ p{
   margin: 20px;
 }
 
+.testimonial-text {
+  font-weight:bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 /* Press Section */
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -123,9 +140,43 @@ p{
 
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+
+.price-title {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.price-text,  {
+  font-weight:bold;
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-img{
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* Call To Action Section */
+
+#cta {
+  background-color: #ff4c68;
+}
+
+/* Fotter Section */
+
+.social-icon {
+  margin: 20px 10px;
 }
